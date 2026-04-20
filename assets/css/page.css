@@ -1,0 +1,197 @@
+body{
+    margin: 0 auto;
+}
+img{
+    display: block;
+    width: 100%;
+    
+}
+.container{
+    display: block;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+    /* <!-- ============================= about us ===================== --> */
+
+
+.about-section {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 60px;
+}
+
+.image-box {
+    position: relative;
+    width: 50%;
+}
+
+.image-box img {
+    width: 100%;
+    border-radius: 6px;
+}
+
+
+.content-box {
+    width: 50%;
+}
+
+.content-box h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+    color: #0a0a2a;
+}
+
+.content-box p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #666;
+    margin-bottom: 15px;
+        font-family: Arial, sans-serif;
+
+}
+
+/* ======================= banner =========================== */
+.offer-banner {
+    position: relative;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.offer-banner img {
+    width: 100%;
+    height: auto;
+    border-radius: 25px;
+    display: block;
+}
+
+/* TEXT OVERLAY */
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.banner-text .small {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.banner-text h1 {
+    font-size: 45px;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.banner-text h2 {
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+/* BUTTON STYLE */
+.shop-btn {
+    padding: 12px 35px;
+    background: white;
+    color: black;
+    border-radius: 30px;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.shop-btn:hover {
+    transform: scale(1.05);
+    background: #f9dada;
+}
+
+/* <!-- ============================ customer ============================= --> */
+.feedback {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+}
+
+.feedback h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #0a0a2a;
+}
+
+.feedback .subtitle {
+    color: #777;
+    line-height: 1.6;
+    margin-bottom: 50px;
+}
+
+/* Cards */
+.cards {
+    display: flex;
+    gap: 30px;
+}
+
+.cards .card {
+    background: #f9f9f9;
+    padding: 40px;
+    width: 50%;
+    position: relative;
+    text-align: left;
+}
+
+
+.cards .card.right {
+    background: #f6f6f6;
+}
+
+/* Text */
+.card .text {
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 40px;
+}
+
+/* User */
+.card .user {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.user img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.user h4 {
+    font-size: 16px;
+    margin-bottom: 3px;
+}
+
+.user span {
+    font-size: 14px;
+    color: #777;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

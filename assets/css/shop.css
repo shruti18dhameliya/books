@@ -1,0 +1,229 @@
+body{
+    margin: 0 auto;
+}
+img{
+    display: block;
+    width: 100%;
+    
+}
+
+.container{
+    display: block;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: border-box;
+    
+}
+.shop-main{
+      display: flex;
+    padding: 20px;
+}
+/* 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+} */
+
+
+    /* <!-- ======================================= left Sidebar ====================--> */
+
+/* Sidebar */
+
+.sidebar {
+    width: 22%;
+    padding-right: 20px;
+}
+
+.price-content {
+    display: none;
+    margin-top: 10px;
+}
+.price-toggle {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+
+}
+
+
+.arrow {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.sidebar h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+.price-content label{
+    font-size: 20px;
+}
+/* categaris */
+.category-content {
+    display: none;
+    margin-top: 10px;
+}
+
+.category-toggle {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+}
+
+.cat-arrow {
+    font-weight: bold;
+    font-size: 25px;
+}
+.category-content label{
+    font-size: 20px;
+}
+/*  */
+.filter-box {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.filter-box h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.banner {
+    /* border: 1px solid #ddd; */
+    padding: 0px;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Main Products Section */
+.products-section {
+    width: 78%;
+}
+
+
+.topbar {
+    display: flex;
+    justify-content: space-between;   
+    align-items: center;              
+    margin-bottom: 20px;
+}
+
+
+.topbar select{
+    font-size: 17px;
+        margin-left: auto;
+
+    
+}
+
+/* ======================== right (1)  Product card image 4 =========================== */
+
+.top-banner {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.top-banner img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    object-fit: cover;
+}
+.top-banner-text strong{
+    font-size: 30px;
+    word-spacing: 3;
+}
+.top-banner-text p{
+    font-size: 18px;
+}
+
+
+
+
+.products-main {
+    display: flex;
+    /* grid-template-columns: repeat(4, 1fr); */
+    gap: 20px;
+    margin-bottom: 4%;
+}
+
+.product {
+    padding: 0;        /* REMOVE extra padding */
+    border: none;      /* REMOVE border so no outer box */
+     overflow: hidden;
+}
+
+.product img {
+    width: 100%;            /* FULL width */
+    height: auto;           /* Proper scaling */
+    object-fit: cover;      /* Image will look larger & cleaner */
+    margin-bottom: 10px;
+     transition: transform 0.3s ease;
+}
+
+
+.product span{
+    font-size: 20px;
+    text-align: left;
+}
+.product p{
+    font-size: 19px;
+    text-align: left;
+}
+.product:hover img {
+    transform: scale(1.12);            /* image becomes bigger */
+}
+
+
+.product .price {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.cart-btn {
+    background: #2bc1c4;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.cart-btn:hover {
+    background: black;
+}
+
+
+
+
+
+
+
+
+/*<!-- ========================================= xml with json data  file name:shop.xml ===========-->
+  */
+.book-container {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .book {
+      border: 1px solid #ddd;
+      padding: 15px;
+      width: 200px;
+      text-align: center;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .book img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
