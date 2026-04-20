@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="assets/css/shop.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+
+
+    <link rel="stylesheet" href="assets/jq/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/jq/owl.theme.default.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="assets/jq/owl.carousel.min.js"></script>
+
+</head>
+<body>
+
+    <div class="shop-parent">
+
+    <div class="container">
+        <div class="shop-main">
+
+    <!-- ======================================= left Sidebar ====================-->
+    <aside class="sidebar">
+        <h2>Shopping Options</h2>
+
+        <div class="filter-box">
+             <h3 class="price-toggle">PRICE <span class="arrow">+</span></h3>
+            <div class="price-content">
+        <label><input type="checkbox"> $0 - $100</label><br>
+        <label><input type="checkbox"> $100 - $200</label><br>
+        <label><input type="checkbox"> $200 - $300</label><br>
+        <label><input type="checkbox"> $300 - $400</label>
+    </div>
+        </div>
+
+        <!-- /* categaris */ -->
+        <div class="filter-box category-box">
+    <h3 class="category-toggle">CATEGORIES <span class="cat-arrow">+</span></h3>
+
+    <div class="category-content">
+        <label><input type="checkbox"> Books</label><br>
+        <label><input type="checkbox"> Audio books</label><br>
+        <label><input type="checkbox"> children’s books</label><br>
+        <label><input type="checkbox"> Psychology</label><br>
+        <label><input type="checkbox"> money</label><br>
+        <label><input type="checkbox"> bussiness</label><br>
+        <label><input type="checkbox"> Motivation</label><br>
+        <label><input type="checkbox"> Education</label>
+
+    </div>
+</div>
+
+        <div class="filter-box">
+            <h3>Compare Products</h3>
+            <p>You have no items to compare.</p>
+        </div>
+
+        <div class="filter-box">
+            <h3>My Wish List</h3>
+            <p>You have no items in your wish list.</p>
+        </div>
+
+        <div class="banner">
+            <img src="assets/image/cat-sidebar-promotion.png">
+        </div>
+    </aside>
+
+    <!-- Main products -->
+    <main class="products-section">
+        <div class="topbar">
+            <!-- <p>Items 1-12 of 16</p> -->
+            <select>
+                <option>Position</option>
+                <option>Price</option>
+                <option>Product Name</option>
+            </select>
+        </div>
+
+    <!--===================== right (1)  Product card image 4 ==========================-->
+
+<div class="top-banner">
+    <img src="assets/image/Shop.jpg" alt="Shop Banner">
+    <div class="top-banner-text">
+        <strong>Shop</strong>
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+    </div>
+</div>
+
+
+
+
+        <div class="products-main">
+
+            <div class="product">
+                <img src="assets/image/product1.jpg" alt="">
+                <span>Asperiores Repellat</span>
+                <p class="price"><b>$339.00</b></p>
+                <button class="cart-btn">ADD TO CART</button>
+            </div>
+
+            <div class="product">
+                <img src="assets/image/product2.jpg" alt="">
+                <span>Molestiae Consequatur</span>
+                <p class="price"><b>$119.00</b></p>
+                <button class="cart-btn">ADD TO CART</button>
+            </div>
+
+            <div class="product">
+                <img src="assets/image/product3.jpg" alt="">
+                <span>Voluptas Assumenda</span>
+                <p class="price"><b>$219.00</b></p>
+                <button class="cart-btn">ADD TO CART</button>
+            </div>
+
+            <div class="product">
+                <img src="assets/image/product4.jpg" alt="">
+                <span>Praesentium Voluptatum</span>
+                <p class="price"><b>$319.00</b></p>
+                <button class="cart-btn">ADD TO CART</button>
+            </div>
+
+        </div>
+
+ <!--===================== right (2)   Product card image 4 ==========================-->
+
+
+            <div class="products-main">
+
+            <div class="product">
+                <img src="assets/image/product5.jpg" alt="">
+                <span>Asperiores Repellat</span>
+                <p class="price"><b>$339.00</b></p>
+                <button class="cart-btn">ADD TO CART</button>
+            </div>
+
+            <div class="product">
+                <img src="assets/image/product6.jpg" alt="">
+                <span>Molestiae Consequatur</span>
+                <p class="price"><b>$119.00</b></p>
+                <button class="cart-btn">ADD TO CART</button>
+            </div>
+
+            <div class="product">
+                <img src="assets/image/product7.jpg" alt="">
+                <span>Voluptas Assumenda</span>
+                <p class="price"><b>$219.00</b></p>
+                <button class="cart-btn">ADD TO CART</button>
+            </div>
+
+            <div class="product">
+                <img src="assets/image/product8.jpg" alt="">
+                <span>Praesentium Voluptatum</span>
+                <p class="price"><b>$319.00</b></p>
+                <button class="cart-btn">ADD TO CART</button>
+            </div>
+
+        </div>
+
+
+
+
+
+    </main>
+
+    </div>
+</div>
+</div>    
+
+<!-- ==== price  =======-->
+<script>
+$(document).ready(function () {
+
+    $(".price-toggle").click(function () {
+        $(".price-content").slideToggle(200);
+
+        let arrow = $(this).find(".arrow");
+
+        if (arrow.text() === "+") {
+            arrow.text("-");
+        } else {
+            arrow.text("+");
+        }
+    });
+
+});
+</script>
+
+<!-- ====== categaris ====== -->
+<script>
+    $(document).ready(function () {
+
+    // CATEGORY toggle
+    $(".category-toggle").click(function () {
+        $(".category-content").slideToggle(200);
+
+        let arrow = $(this).find(".cat-arrow");
+
+        if (arrow.text() === "+") {
+            arrow.text("-");
+        } else {
+            arrow.text("+");
+        }
+    });
+
+});
+
+</script>
+
+
+<!-- ========================================= xml with json data  file name:shop.xml ===========-->
+
+<h1>My Book Store</h1>
+  <div class="book-container" id="bookContainer"></div>
+<img src="images/product6.jpg" width="200">
+  <script>
+    fetch('shop.json')
+      .then(response => response.json())
+      .then(data => {
+        const container = document.getElementById('bookContainer');
+
+        data.forEach(book => {
+          const bookDiv = document.createElement('div');
+          bookDiv.classList.add('book');
+
+          bookDiv.innerHTML = `
+            <img src="${book.image}" alt="${book.title}">
+            <h3>${book.title}</h3>
+            <p><strong>Author:</strong> ${book.author}</p>
+            <p><strong>Price:</strong> ${book.price}</p>
+          `;
+
+          container.appendChild(bookDiv);
+        });
+      })
+      .catch(error => console.error('Error loading JSON:', error));
+  </script>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

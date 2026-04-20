@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/sale.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+
+    <link rel="stylesheet" href="assets/jq/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/jq/owl.theme.default.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="assets/jq/owl.carousel.min.js"></script>
+</head>
+<body>
+    
+ <div class="container">
+
+    <div class="banner-container">
+
+        <!-- LEFT MAIN BANNER -->
+        <div class="main-banner">
+            <img src="assets/image/sale1.webp" alt="banner">
+
+            <div class="banner-text">
+                <span>Sale up to 30% off</span><br>
+                <strong>Books in Store</strong><br>
+                <button>SHOPPING NOW!</button>
+            </div>
+        </div>
+
+        <!-- RIGHT SIDE -->
+        <div class="right-side">
+
+            <!-- Sale small image -->
+            <div class="side-sale">
+                <img src="assets/image/sale2.webp" alt="">
+            </div>
+
+            <!-- Boxes -->
+            <div class="features-box">
+
+                <div class="feature">
+                    <span class="icon"><i class="fa-solid fa-cart-arrow-down"></i></span>
+                    <div>
+                        <strong>Free shipping item</strong>
+                        <p>For all orders over $500</p>
+                    </div>
+                </div>
+
+                <div class="feature">
+                    <span class="icon"><i class="fa-solid fa-calendar"></i></span>
+                    <div>
+                        <strong>Money back guarantee</strong>
+                        <p>100% money back guarantee</p>
+                    </div>
+                </div>
+
+                <div class="feature">
+                    <span class="icon"><i class="fa-solid fa-money-bill"></i></span>
+                    <div>
+                        <strong>Cash on delivery</strong>
+                        <p>Lorem ipsum dolor amet</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- ==================================  the real down =============================== -->
+ <div class="real-down-parent">
+    
+    
+    <div class="header">
+        <span class="title-text">The ReadDown</span>
+        <div class="line"></div>
+    </div>
+    
+    <div class="real-down">
+<div class="cards">
+        <!-- Card 1 -->
+        <div class="card yellow">
+            <img src="assets/image/sale3.jpg" alt="">
+            <div class="content">
+                <h2>20 books</h2>
+                <p>to Help You Bring<br>Up a Child</p>
+                <a href="#">Read More <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card green">
+            <img src="assets/image/sale4.jpg" alt="">
+            <div class="content">
+                <h2>15 books</h2>
+                <p>to Help You Learn<br>Cooking</p>
+                <a href="#">Read More <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card red">
+            <img src="assets/image/sale5.jpg" alt="">
+            <div class="content">
+                <h2>50 books</h2>
+                <p>to Help You Stay<br>Positive</p>
+                <a href="#">Read More <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</div>
+
+<!-- <script>
+    const sr = ScrollReveal({
+    distance: "50px",
+    origin: "bottom",
+    duration: 1000,
+    reset: false
+});
+
+sr.reveal(".cards", { interval: 500 });
+</script> -->
+
+<script>
+    const sr = ScrollReveal({
+    distance: "50px",
+    origin: "bottom",
+    duration: 1000,
+    reset: false
+});
+
+sr.reveal(".card", { 
+    interval: 500   // 500ms gap between each card
+});
+</script>
+
+</body>
+</html>

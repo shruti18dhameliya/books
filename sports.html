@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/sports.css">
+
+     <link rel="stylesheet" href="assets/jq/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/jq/owl.theme.default.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="assets/jq/owl.carousel.min.js"></script>
+    <style>
+        table, th, td{
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 5px;
+        }
+        /* table{
+            width: 50%;
+            height: 30%;
+            justify-content: center;
+        } */
+         .container {
+    background: url("assets/image/pexels.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+    </style>
+
+</head>
+<body>
+    
+  <div class="recent-articles">
+    <h1>Most Recent Articles</h1>
+
+    <div class="articles-container">
+
+        <!-- Card 1 -->
+        <div class="article-card">
+            <div class="article-img">
+                <img src="assets/image/post1.jpg" alt="">
+                <div class="date-box">
+                    <span class="day">12</span>
+                    <span class="month">APRIL</span>
+                </div>
+            </div>
+
+            <div class="article-content">
+                <span class="category">SELECTION</span>
+                <h2>The quality of life is determined by your books</h2>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="article-card">
+            <div class="article-img">
+                <img src="assets/image/post2.jpg" alt="">
+                <div class="date-box">
+                    <span class="day">13</span>
+                    <span class="month">APRIL</span>
+                </div>
+            </div>
+
+            <div class="article-content">
+                <span class="category">SELECTION</span>
+                <h2>The best way to spend your Sunday afternoon</h2>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="article-card">
+            <div class="article-img">
+                <img src="assets/image/post3.jpg" alt="">
+                <div class="date-box">
+                    <span class="day">21</span>
+                    <span class="month">APRIL</span>
+                </div>
+            </div>
+
+            <div class="article-content">
+                <span class="category">MINDSET</span>
+                <h2>The most anticipated romance novels of 2025</h2>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<!--================================== xml with ajax  file name:ex1 ======================================-->
+
+
+<div class="container">
+    <div class="top">
+        <div>
+            <h1 id="title"></h1>
+        </div>
+        <div>
+            <p id="description"></p>
+            <button>Sign-up Now</button>
+        </div>
+    </div>
+
+    <div class="benefits" id="benefits"></div>
+</div>
+
+<script>
+    const xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+
+            const xml = this.responseXML;
+
+            document.getElementById("title").innerHTML =
+                xml.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+
+            document.getElementById("description").innerHTML =
+                xml.getElementsByTagName("description")[0].childNodes[0].nodeValue;
+
+            const items = xml.getElementsByTagName("item");
+            let output = "";
+
+            for (let i = 0; i < items.length; i++) {
+
+                let number = items[i].getElementsByTagName("number")[0].childNodes[0].nodeValue;
+                let heading = items[i].getElementsByTagName("heading")[0].childNodes[0].nodeValue;
+                let text = items[i].getElementsByTagName("text")[0].childNodes[0].nodeValue;
+
+                output += `
+                    <div class="benefit">
+                        <h4>${number}</h4>
+                        <h3>${heading}</h3>
+                        <p>${text}</p>
+                    </div>
+                `;
+            }
+
+            document.getElementById("benefits").innerHTML = output;
+        }
+    };
+
+    xhttp.open("GET", "ex1.xml", true);
+    xhttp.send();
+</script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
